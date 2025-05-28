@@ -2,14 +2,6 @@
 
 **Stackwise** is a full-stack, modern web application designed as a community-driven platform where developers can **ask questions**, **post answers**, **comment**, and **vote** on content — inspired by the functionality of Stack Overflow. Built with **Next.js**, **TypeScript**, and powered by **Appwrite** as the backend-as-a-service (BaaS), this project demonstrates a modular, scalable, and maintainable codebase suitable for both personal and professional development use.
 
----
-
-## 📸 Preview
-
-> Add a screenshot or GIF here
-
----
-
 ## 🚀 Features
 
 - ✅ User Authentication (Register & Login)
@@ -22,8 +14,6 @@
 - 💡 Modular Component-based Architecture
 - 📦 API route management via Next.js (`/api`)
 - ☁️ Fully Integrated with Appwrite (Auth, DB, Storage)
-
----
 
 ## 🛠️ Tech Stack
 
@@ -38,57 +28,6 @@
 
 - [Appwrite](https://appwrite.io/) – Open-source backend-as-a-service for authentication, database, and storage
 - REST-like API routes (`/src/app/api`) for backend logic
-
-### 📌 Additional Tools
-
-- [React Hook Form](https://react-hook-form.com/) – Form handling
-- Rich Text Editor (custom or package-based)
-- ESLint + Prettier – Linting & formatting
-- Vercel (Optional) – Deployment
-
----
-
-## 📁 Project Structure Overview
-
-src/
-├── auth/ # Authentication pages
-│ ├── login/
-│ │ └── page.tsx
-│ └── register/
-│ └── page.tsx
-│ └── layout.tsx
-
-├── app/ # Main app routing and layout
-│ ├── api/ # API routes
-│ │ ├── answer/route.ts
-│ │ └── vote/route.ts
-│ ├── layout.tsx
-│ ├── page.tsx
-
-├── components/ # Reusable UI components
-│ ├── magiciui/ # Custom UI components (folder-based)
-│ └── ui/ # Form components like input, label, etc.
-
-├── lib/ # Utility functions and helpers
-│ └── utils.ts
-
-├── models/
-│ ├── client/config.ts # Appwrite client-side config
-│ └── server/ # Server-side Appwrite setup
-│ ├── dbSetup.ts
-│ ├── question.collection.ts
-│ ├── answer.collection.ts
-│ ├── comment.collection.ts
-│ └── vote.collection.ts
-
-├── store/ # Global state (e.g., auth state)
-│ └── Auth.ts
-
-├── middleware.ts # Middleware for route protection
-├── globals.css # Global styles
-├── .env.sample # Sample env file
-
----
 
 ## 🔐 Environment Setup
 
